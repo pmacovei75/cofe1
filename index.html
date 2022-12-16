@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CoffeeTime</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<script src="https://use.fontawesome.com/767155eaee.js"></script>
+	<script src="js/scripts.js"></script>
+</head>
+<body onload="getYear()">
+<div class="header">
+	<div class="logo">
+		<img src="images/logo.png" alt="Logo" />
+	</div>
+	<div class="nav" id="myNav">
+	  <a href="#" onclick="hideMenu()">CoffeeTime</a>
+	  <a href="#about" onclick="hideMenu()">Информация о компании</a>
+	  <a href="#products" onclick="hideMenu()">Продукция</a>
+	  <a href="#contacts" onclick="hideMenu()">Контакты</a>
+	  <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()"><i class="fa fa-bars"></i></a>
+	</div>
+</div>
+<!--slider-->
+
+<div class="slideshow-container">
+  <div class="slide anim">
+	<div class="numbertext">1 / 4</div>
+	<img src="images/slider1.jpg">
+    <div class="text">Мы всегда рады тебя обслужить... </div>
+  </div>
+  <div class="slide anim">
+    <div class="numbertext">2 / 4</div>
+    <img  src="images/slider2.jpeg">
+    <div class="text">Кофе у нас всегда горячий...</div>
+  </div>
+  <div class="slide anim">
+    <div class="numbertext">3 / 4</div>
+    <img src="images/slider3.jpg">
+    <div class="text">...и эспрессо тоже...</div>
+  </div>
+  <div class="slide anim">
+    <div class="numbertext">4 / 4</div>
+	<div class="orar">
+		<h2>Наш график работы</h2>
+		<h3>Понедельник - Пятница:</h3>
+		<h3>8:00-20:00</h3>
+		<h3>Суббота - Воскресенье:</h3>
+		<h3>10:00-22:00</h3>
+	</div>
+    <div class="text">Coffee Time</div>
+  </div>
+</div>
+
+<!--о товарах-->
+<hr id="about" />
+<br>
+<div class="about">
+	<h1>Кофе! И пусть весь мир подождет...</h1>
+	<i class="fa fa-coffee margin-bottom-15"></i>
+	<div class="main-paragraph text-paragraph">
+		<p><strong>Кофе</strong> — один из самых популярных и древних напитков на земном шаре. Миллионы людей начинают свой день с чашечки кофе. С молоком, с сахаром, с холодной водой, с лимоном и даже с солью… Его необыкновенный вкус и аромат порождает настоящую кофеманию. Кофе — это больше, чем напиток. Кофе — это искусство наслаждения.</p>
+		<p>Благодаря содержанию кофеина напиток обладает бодрящим эффектом, который хорошо знаком любителям утреннего кофе. Почему это происходит? Кофеин улучшает кровоснабжение мозга и даже активизирует кратковременную память, что помогает принимать оперативные решения, повышает работоспособность и способно снять усталость. Благодаря своему тонизирующему действию напиток помогает справиться со стрессом, побороть апатию, вялость и сонливость.
+		<br />Регулярное употребление кофе способно защитить человека от таких болезней как: рак печени, болезнь Альцгеймера, сахарный диабет второго типа, алкогольный цирроз печени. А если пить кофе без сахара, то можно избежать кариеса.
+		<br />Помимо этого кофе благотворно влияет на иммунную и пищеварительную системы. Напиток увеличивает выделение желудочного сока, что, в свою очередь способствует лучшему усвоению пищи.
+		</p>
+	</div>
+</div>
+
+<!--товары-->
+<hr  id="products" />
+<br>
+<div class="products">
+    <div class="description_prod">
+        <h1>Наши напитки из кофе</h1>
+        <p>Самые востребованные напитки</p>
+    </div>
+    <div class="cards_prod">
+    <div class="card">
+	<a href="pages/cappuccino.html">
+        <img src="images/cappuccino.jpeg" alt="cappuccino" class="photo_prod" />
+        <h3>Капучино</h3>
+        <p>В основном заказывают дамы...</p>
+	</a>
+    </div>
+    <div class="card">
+	<a href="pages/latte.html">
+        <img src="images/latte.jpg" alt="latte" class="photo_prod" />
+        <h3>Латте</h3>
+        <p>Продукт, который часто спрашивают девушки...</p>
+	</a>
+    </div>
+    <div class="card">
+	<a href="pages/espresso.html">
+        <img src="images/espresso.jpeg" alt="espresso" class="photo_prod" />
+        <h3>Эспрессо</h3>
+        <p>...его очень любят мужчины...</p>
+    </a>
+	</div>
+    </div>
+</div>  
+
+<!--контактные данные-->
+<hr id="contacts" />
+<br>
+<div class="contacts">
+	<h2>Как нас найти?</h2>
+	<div class="coord">
+		<div class="blok_coord">
+		<div>
+			<span class="ico1"><i class="fa fa-map-marker"></i></span>
+		</div>
+		<div class="txt">
+			<p>улица Радости 77</p>
+		</div>
+		</div>
+		<div class="blok_coord">
+		<div>
+			<span class="ico"><i class="fa fa-at"></i></span>
+		</div>
+		<div class="txt">	
+			<p>time@gmail.com</p>
+		</div>
+		</div>
+		<div class="blok_coord">
+		<div>
+			<span class="ico"><i class="fa fa-phone"></i></span>
+		</div>
+		<div class="txt">
+			<p>033778899</p>
+		</div>
+		</div>
+	</div>
+	<div class="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.818045302383!2d28.865162315132057!3d47.063419533335676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97cdfd5ea1de7%3A0x41e815fb62f45930!2sTekwill!5e0!3m2!1sen!2s!4v1575620242119!5m2!1sen!2s" width="95%" height="250" frameborder="0"  allowfullscreen=""></iframe>
+	</div>
+</div>
+<!--нижний колонтитул-->
+<div class="footer">
+	<h3><span class="copy">&copy;</span> Copy <span id="year"></span></h3>
+	<p>author@mail.com, 077668899</p>
+</div>
+
+<script src="js/script_slider.js"></script>
+</body>
+</html>
